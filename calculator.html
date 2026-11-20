@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+  </head>
+  <body>
+    <div>
+      <p class="js-calculation"></p>
+
+    <p>
+      <button onclick="
+      updateCalculation('1');"
+      class="numberButton">
+      1
+    </button>
+
+    <button onclick="
+      updateCalculation('2');"
+      class="numberButton">
+      2
+    </button>
+
+    <button onclick="
+      updateCalculation('3');"
+      class="numberButton">
+      3
+    </button>
+
+    <button onclick="
+    updateCalculation('+');"
+    class="calculationButton">
+      +
+    </button>
+    </p>
+
+    <p>
+    <button onclick="
+      updateCalculation('4');"
+      class="numberButton">
+      4
+    </button>
+
+    <button onclick="
+      updateCalculation('5');"
+      class="numberButton">
+      5
+    </button>
+
+    <button onclick="
+      updateCalculation('6');"
+      class="numberButton">
+      6
+    </button>
+
+    <button onclick="
+      updateCalculation('-');"
+      class="calculationButtonSub">
+      -
+    </button>
+    </p>
+
+    <p>
+      <button onclick="
+      updateCalculation('7');"
+      class="numberButton">
+      7
+    </button>
+
+    <button onclick="
+      updateCalculation('8');"
+      class="numberButton">
+      8
+    </button>
+
+    <button onclick="
+      updateCalculation('9');"
+      class="numberButton">
+      9
+    </button>
+
+    <button onclick="
+      updateCalculation('*');"
+      class="calculationButtonPrd">
+      *
+    </button>
+    </p>
+
+    <p>
+    <button onclick="
+      updateCalculation('0');"
+      class="numberButton">
+      0
+    </button>
+
+    <button onclick="
+      updateCalculation('.');"
+      class="numberButtonDec">
+      .
+    </button>
+
+    <button onclick="
+    calculation = eval(calculation);
+    document.querySelector('.js-calculation')
+      .innerHTML = calculation;
+    localStorage.setItem('calculation', JSON.stringify(calculation));"
+    class="numberButton">
+      =
+    </button>
+
+    <button onclick="
+      updateCalculation('/');"
+      class="calculationButtonDiv">
+      /
+    </button>
+    </p>
+
+    <p>
+    <button onclick="
+      calculation = '';
+      localStorage.removeItem('calculation');
+      document.querySelector('.js-calculation').innerHTML = '';"
+      class="numberButtonClr">
+      Clear
+    </button>
+
+    <button class="numberButtonDel"
+    onclick="deleteCalculation()">
+      Delete
+    </button>
+    </p>
+    </div>
+
+    <script src="scripts/calculator.js"></script>
+  </body>
+</html>

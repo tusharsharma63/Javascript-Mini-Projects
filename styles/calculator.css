@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 820px;
+}
+
+div {
+  background-color: black;
+  color: white;
+  padding: 20px 25px 24px 25px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  font-family: Arial;
+}
+
+button {
+  background-color: rgba(169, 169, 169, 0.308);
+  color: white;
+  border: none;
+  padding: 20px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 2px;
+  font-size: 20px;
+}
+
+.calculationButton,
+.calculationButtonPrd,
+.calculationButtonSub,
+.calculationButtonDiv {
+  background-color: orange;
+}
+
+.calculationButtonPrd {
+  padding: 20px 27px;
+}
+
+.calculationButtonSub {
+  padding: 20px 28px;
+}
+
+.calculationButtonDiv {
+  padding: 20px 29px;
+}
+
+.numberButtonDec {
+  padding: 20px 28px;
+}
+
+.numberButtonClr,
+.numberButtonDel {
+  font-size: 15px;
+  border-radius: 100px;
+  padding: 22px 14px;
+}
+
+.numberButtonDel {
+  padding: 22px 10px;
+  margin-right: 134px;
+}
+
+.js-calculation {
+  font-size: 35px;
+}
